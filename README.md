@@ -21,4 +21,5 @@ This example demonstrates how to keep infrastrcutre, i.e. databases, queuing sys
 ## external-service
 This example demonstrates how to connect shared infrastructure in development. For example, in some development teams a shared database is used for development. This example builds on the `services-and-infrastructure` example and introduces an additional shared database system through an external DNS record set that allows services to discover this databse as they would in production using DNS.
 
-
+## slow-shutdown
+This example demonstrates gracefully shutting down services, some of which take a while to close.

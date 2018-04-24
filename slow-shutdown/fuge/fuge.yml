@@ -1,0 +1,22 @@
+fuge_global:
+  tail: true
+  monitor: false
+  sigkill_after: 5000
+slowservice1:
+  type: process
+  path: ../slowservice1
+  run: npm start
+  ports:
+    - slowservice1=8081
+slowservice2:
+  type: process
+  path: ../slowservice2
+  run: npm start
+  ports:
+    - slowservice2=8082
+slowservice3:
+  type: process
+  path: ../slowservice3
+  run: npm start
+  ports:
+    - slowservice3=8083
